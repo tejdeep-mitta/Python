@@ -1,1 +1,9 @@
-print "Hello World!\n"
+// Build Pipeline 
+	// Run on default node
+	node { 
+			
+				
+			// Setup Environment Variables
+			    stage('Pre-build') {
+									sh 'echo hello world'
+                  }
