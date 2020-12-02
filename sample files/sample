@@ -1,9 +1,16 @@
-// Build Pipeline 
-	// Run on default node
-	node { 
-			
-				
-			// Setup Environment Variables
-			    stage('Pre-build') {
-									sh 'echo hello world'
-                  }
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage(prebuild){
+            steps {
+            echo 'hi'
+            }
+        }
+    }
+}
