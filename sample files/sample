@@ -9,7 +9,7 @@ pipeline {
         }
         stage(prebuild){
             steps {
-            echo 'hi'
+            echo 'hi tejdeep'
             }
         }
     }
