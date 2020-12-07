@@ -1,7 +1,26 @@
-node {
+pipeline {
+  agent any
 
-  stage(copy) {
-    echo 'hi tejdeep hi'
+  stages {
+    stage('Hello') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+    stage(prebuild) {
+      steps {
+        echo 'hi tejdeep hi'
+      }
+    }
+
+    stage(copy) {
+      steps {
+        dir('DT-fabric') {
+          git branch: 'main',
+          url: 'https://github.com/tejdeep-mitta/Python'
+        }
+      }
+    }
+
   }
-
 }
