@@ -8,14 +8,14 @@ pipeline {
             }
         }
         	
-         stage(copy){
+         stage(copy)
             steps {
             echo 'hi tejdeep hi'
             mkdir new
            
             
             }
-        }
+        
 		
 		stage(prebuild)
         {
