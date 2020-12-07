@@ -17,8 +17,7 @@ pipeline {
     stage(copy) {
       steps {
         dir('sample files') {
-          git branch: 'main',
-          url: 'https://github.com/tejdeep-mitta/Python'
+          copy sample  Calculator pgm.py
         }
       }
     }
