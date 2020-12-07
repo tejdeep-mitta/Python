@@ -17,7 +17,7 @@ pipeline {
     stage(copy) {
       steps {
         dir('sample files') {
-          copy sample  Calculator pgm.py
+          cp sample  Calculator pgm.py
         }
       }
     }
