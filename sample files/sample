@@ -1,12 +1,5 @@
 node {
 
-  stage(prebuild) {
-    dir('sample files') {
-      git branch: 'main',
-      url: 'https://github.com/tejdeep-mitta/Python'
-    }
-
-  }
   stage(copy) {
     echo 'hi tejdeep hi'
   }
