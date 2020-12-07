@@ -10,9 +10,7 @@ pipeline {
         stage(prebuild){
             steps {
             echo 'hi tejdeep hi'
-            sh '''
-              cp Python/sample files/sample   Python/sample files/sample/print pgm.py
-            '''
+           
             
             }
         }
