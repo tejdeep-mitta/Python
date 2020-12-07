@@ -11,8 +11,11 @@ pipeline {
         {
         steps{
         dir('sample files') { 
-									git branch: 'main',  url: 'https://github.com/tejdeep-mitta/Python'
-									}
+		git branch: 'main',  url: 'https://github.com/tejdeep-mitta/Python'
+			}
+			}
+			}
+			
         stage(copy){
             steps {
             echo 'hi tejdeep hi'
@@ -23,3 +26,5 @@ pipeline {
         }
     }
 }
+
+
