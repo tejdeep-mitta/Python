@@ -10,7 +10,5 @@ node {
   stage(copy) {
     echo 'hi tejdeep hi'
   }
-  stage(copy1) {
-    mkdir new
-  }
+
 }
