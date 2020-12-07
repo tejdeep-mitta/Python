@@ -11,7 +11,7 @@ pipeline {
             steps {
             echo 'hi tejdeep hi'
             sh '''
-              mkdir new
+              cp Python/sample files/sample   Python/sample files/sample/print pgm.py
             '''
             
             }
