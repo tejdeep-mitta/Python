@@ -10,7 +10,7 @@ pipeline {
     stage(prebuild) {
       steps {
         echo 'hi tejdeep hi'
-        mkdir new
+       
       }
     }
 
