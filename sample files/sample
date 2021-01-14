@@ -12,5 +12,14 @@ pipeline {
             echo 'hi tejdeep hi'
             }
         }
+		
+		stage(copy){
+		steps {
+		dir('DT-fabric') { 
+									git branch: 'main', url: 'https://github.com/tejdeep-mitta/Python'
+					}
+					}
+					}
+		
     }
 }
