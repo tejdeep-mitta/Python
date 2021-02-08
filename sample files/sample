@@ -1,17 +1,27 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
+  stages {
+    stage('Hello') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+    stage(prebuild) {
+      steps {
+        echo 'hi tejdeep hi'
+       
+      }
+    }
+
+    stage(copy) {
+      steps {
+        dir('sample files') {
+        sh '''
+             cp sample  Calculator pgm.py
+         '''    
         }
-        stage(prebuild){
-            steps {
-            echo 'hi tejdeep hi'
-            }
-        }
+<<<<<<< HEAD
 		
 		stage(copy){
 		steps {
@@ -21,5 +31,10 @@ pipeline {
 					}
 					}
 		
+=======
+      }
+>>>>>>> c3b92134bc82a02bf40097682eb5460d8b886943
     }
+
+  }
 }
